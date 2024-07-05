@@ -1,0 +1,349 @@
+@media screen and (max-width: 991px){
+  /* ipad, tablets */
+  .carousel .list .item{
+      width: 90%;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
+      overflow: auto;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail .title{
+      font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .li {
+   color: white;
+   left: -1%;
+  }
+  .hamburger{
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+      position: fixed;
+      background: rgba(0, 0, 0, 0.336);
+      justify-content: space-evenly;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.938);
+
+      pointer-events: none;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  li.fade{
+      opacity: 1;
+  }
+}
+/* /Animating Hamburger Icon on Click/ */
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@media screen and (max-width: 767px){
+  /* mobile */
+
+  /* project */
+
+  .projecth1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #363535;
+    position: absolute;
+    top: 91rem;
+}
+  .wrapper {
+    margin-top: 29rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+ 
+  /* end */
+
+  .abouth1 {
+    font-size: 2.8rem;
+    margin-top: -4.1rem;
+    text-align: center;
+    left: 19.3%;
+    position: absolute;
+    color: #363535;
+    letter-spacing: 1px;
+
+}
+
+
+  .arrows {    
+      justify-content: center;   
+      text-align: center;
+      margin-bottom: -1%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+  }
+
+  #prev {
+    margin-bottom: -2.3rem;
+    margin-left: -6.3rem;
+  }
+
+  #next {
+     margin-left: 30rem;
+  }
+
+  #back {
+    margin-bottom: 5px;
+      margin-left: 6.3rem;
+  }
+
+  .carousel .list .item .introduce .des {
+    color: black;
+  }
+
+
+
+  .introduce {
+  margin-left: 14rem;
+   margin-top: 7rem;
+   text-align: center;
+  }
+
+  .carousel{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: -12rem;
+      align-items: center;
+      height: 660px;
+      margin-top: 40px;
+  }
+  .carousel .list .item{
+
+      width: 100%;
+      font-size: 10px;
+  }
+  
+  .carousel .list{
+      height: 100%;
+  }
+  .carousel .list .item:nth-child(2) .introduce{
+      width: 50%;
+  }
+
+  
+   /* img nya */
+
+   .carousel.showDetail .list .item:nth-child(2) img{
+    right: 1%;
+}
+  .carousel .list .item img{
+      width: 60%;
+      margin-bottom: -2rem;
+      margin-top: -10rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+  }
+
+  /* close img */
+
+/* see more before */
+.carousel .list .item .introduce .seeMore{
+color: rgb(0, 0, 0);
+font-size: 1.5em;
+}
+
+
+
+
+
+/* after see more */
+
+.detail .des {
+color: black;
+text-align: center;
+left: -100%
+}
+
+.carousel.showDetail .list .item:nth-child(2) .detail{
+opacity: 1;
+width: 50%;
+position: absolute;
+right: 5%;
+top: 59%;
+transform: translateY(-50%);
+text-align: center;
+pointer-events: auto;
+}
+/* close see more */
+
+
+
+
+
+
+
+
+  .carousel.showDetail .list .item:nth-child(2) .detail{
+      backdrop-filter: blur(10px);
+      font-size: small;
+  }
+  .carousel .list .item:nth-child(2) .introduce .des,
+  .carousel.showDetail .list .item:nth-child(2) .detail .des{
+      height: 100px;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
+      display: flex;
+      width: max-content;
+      float: right;
+  }
+}
+
+@media (max-width: 700px) {
+    .text h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  
+  /* gallery */
+  section.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  section.gallery img {
+    object-fit: cover;
+  }
+  
+  .gallery h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery-wp {
+    display: flex;
+    width: 90vw;
+  }
+  
+  .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+  }
+  
+  .panel h1 {
+    font-size: 35px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+  
+  .panel.active h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  @media (max-width: 480px) {
+    .gallery {
+      margin-top: 23rem;
+      width: 100vw;
+      transition: opacity 0.3s ease-in 0.4s;
+    }
+  
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+
+    
+    
+  }
+
+
+
+/* slider char */
+
+ 
+
+
+
+/* navbar  */
+
+
+
